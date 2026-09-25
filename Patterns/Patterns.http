@@ -1,0 +1,18 @@
+@Patterns_HostAddress = http://localhost:5214
+
+GET {{Patterns_HostAddress}}/connection/
+Accept: application/json
+
+###
+
+PATCH {{Patterns_HostAddress}}/connection
+Content-Type: application/json
+Accept: application/json
+
+{
+  "port": "COM3",
+  "status": "Disconnected"
+}
+
+###
+
